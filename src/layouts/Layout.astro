@@ -8,13 +8,78 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon"  href="/imagenes/irielportada.png" />
+		
 		    <Font cssVariable="--font-quicksand" />
+			
 	    <Font cssVariable="--font-fredoka" />
-		<title>Astro Basics</title>
+		 <!-- SEO básico -->
+  <title>¡Celebremos los años de Iriel! 🎂💖</title>
+
+  <meta
+    name="description"
+    content="🌸¡Celebremos los años de Iriel! 🎂💖 Acompáñanos a compartir un día lleno de alegría, amor, sorpresas y momentos inolvidables. ¡Te esperamos! 🥳💕"
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <!-- URL canónica: reemplaza por la URL real -->
+  <!-- <link
+    rel="canonical"
+    href="https://tudominio.com/cumpleanos-de-iriel/"
+  /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="¡Celebremos los años de Iriel! 🎂💖"
+  />
+  <meta
+    property="og:description"
+    content="Acompáñanos a compartir un día lleno de alegría, amor, sorpresas y momentos inolvidables. ¡Te esperamos para celebrar juntos! 🥳💕"
+  />
+  <meta
+    property="og:url"
+    content="https://tudominio.com/cumpleanos-de-iriel/"
+  />
+  <meta
+    property="og:image"
+    content="https://tudominio.com/images/cumpleanos-iriel.jpg"
+  />
+  <meta
+    property="og:image:alt"
+    content="Invitación al cumpleaños de Iriel"
+  />
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:site_name" content="Cumpleaños de Iriel" />
+
+  <!-- Schema.org: evento de cumpleaños -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Cumpleaños de Iriel",
+    "description": "Celebremos los años de Iriel. Acompáñanos a compartir un día lleno de alegría, amor, sorpresas y momentos inolvidables.",
+    "image": [
+      "https://tudominio.com/images/cumpleanos-iriel.jpg"
+    ],
+   "startDate": "2026-11-14T17:30:00-05:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "IDDP EMMANUEL",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad",
+        "addressCountry": "PE"
+      }
+    }
+  }
+  </script>
 	</head>
-	<body class="flex items-center justify-center min-h-screen p-4 ">
+	<body class="flex items-center justify-center min-h-screen p-1 ">
 		
 				<slot />
 	
@@ -25,7 +90,7 @@
 <style>
 
 	body{
-		  background-image: url(/imagenes/fondo2.jpg);
+		  background-image: url(/imagenes/fondo2.webp);
             background-repeat: no-repeat;
             background-size: cover;
 			
