@@ -1,6 +1,12 @@
 ---
  import '../styles/global.css' 
  import { Font } from "astro:assets";
+
+ const url = "https://iriel.vercel.app/";
+const imagen = new URL(
+  "/images/irielportada.png",
+  url
+).href;
 ---
 
 <!doctype html>
@@ -39,18 +45,18 @@
     property="og:description"
     content="Acompáñanos a compartir un día lleno de alegría, amor, sorpresas y momentos inolvidables. ¡Te esperamos para celebrar juntos! 🥳💕"
   />
-  <meta
-    property="og:url"
-    content="https://tudominio.com/cumpleanos-de-iriel/"
-  />
-  <meta
-    property="og:image"
-    content="https://tudominio.com/images/cumpleanos-iriel.jpg"
-  />
-  <meta
-    property="og:image:alt"
-    content="Invitación al cumpleaños de Iriel"
-  />
+  
+
+  <meta property="og:url" content={url} />
+<meta property="og:image" content={imagen} />
+<meta
+  property="og:image:alt"
+  content="Invitación al cumpleaños de Iriel"
+/>
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="es_PE" />
+
   <meta property="og:locale" content="es_PE" />
   <meta property="og:site_name" content="Cumpleaños de Iriel" />
 
