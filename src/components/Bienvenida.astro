@@ -40,7 +40,7 @@
                     León Alejandro
                 </h1> -->
                 <div class="flex flex-col justify-center items-center">
-  <figure>
+  <figure class="cinco">
 
                     <img src="/imagenes/titulo2.webp"  class="block w-[90%]  xl:w-[70%] mx-auto" alt="">
                 </figure>
@@ -198,6 +198,7 @@
                     <img src="/imagenes/tt.webp" alt="Decoración" class=" xl:w-[15%] w-[50%] mx-auto">
 </div>
 
+
                 <!-- SECCIÓN DE REGALOS -->
 <div class="text-center bg-white/70 backdrop-blur-sm p-4 rounded-md flex flex-col gap-[.8rem] mb-[3rem] xl:w-[40%] xl:mx-auto xl:mb-[4rem]" style="backdrop-filter: hue-rotate(45deg);">
    
@@ -224,7 +225,7 @@
   <figure class="text-fuchsia-300">   <img src="/imagenes/camera-heart.svg" alt="Decoración" class="block w-[20%] mx-auto xl:w-[5%] "></figure>
   <p class="text-lg   text-verde-militar px-4 xl:text-2xl" style="color: #a0522d;font-weight: 600;">¡Muy pronto!</p>
 
-     <figure>   <img src="/imagenes/esperamos.webp" alt="Decoración" class="block w-[60%] mx-auto xl:w-[15%] "></figure>
+     <figure class="decoracion">   <img src="/imagenes/esperamos.webp" alt="Decoración" class="block w-[60%] mx-auto xl:w-[15%] "></figure>
                  </div>
  
             </div>
@@ -286,7 +287,7 @@
         entryButton.addEventListener('click', () => {
             entryScreen.style.display = 'none';
             invitationWrapper.style.display = 'block';
- backgroundMusic.volume=.6
+ backgroundMusic.volume=.7
 confetti({
   particleCount: 300,
   spread: 360,
@@ -525,19 +526,21 @@ confetti({
 
 .decoracion2 {
   /* animation: flotar 3s ease-in-out infinite; */
-      animation: aparecer .8s ease-out both;
+      animation: aparecer .8s .1s ease-out both;
       
+}
+
+
+.cinco{
+     /* animation: aparecer .5s ease-out both; */
 }
 
 
 
 
 
-
-
-
 .decoracion {
-   animation: latir 1.5s ease-in-out infinite;
+   animation: latir 1.7s ease-in-out infinite;
 }
 
 @keyframes destellar {
@@ -602,14 +605,6 @@ confetti({
 
 
 
-@keyframes flotarDiagonal {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(8px, -12px); }
-}
-
-.nube {
-  animation: flotarDiagonal 4s ease-in-out infinite;
-}
 
 
 
