@@ -42,7 +42,7 @@
                 <div class="flex flex-col justify-center items-center">
   <figure>
 
-                    <img src="/imagenes/titulo2.webp"  class="block xl:w-[70%] mx-auto" alt="">
+                    <img src="/imagenes/titulo2.webp"  class="block w-[90%]  xl:w-[70%] mx-auto" alt="">
                 </figure>
 
 
@@ -55,10 +55,10 @@
 
                 <div class="intro">
                                       <figure >
-                    <img src="/imagenes/irielportada.webp" class="block w-[80%] xl:w-[25%] mx-auto" alt="">
+                    <img src="/imagenes/irielportada.webp" class="decoracion2 block w-[82%] xl:w-[25%] mx-auto" alt="">
                 </figure>
 <div class="flex items-center">
-    <figure class="block xl:hidden">
+    <figure class="block xl:hidden decoracion">
          <img src="/imagenes/perro.png" alt="Decoración" class="w-[100%] xl:w-[15%] block">
     </figure>
       
@@ -71,7 +71,7 @@
                 </div>
 
 
-<div class="dia flex flex-col gap-[1.8rem] my-[2rem] xl:my-[4rem]">
+<div class="dia flex flex-col gap-[1.8rem] my-[3rem] xl:my-[4rem]">
 
 
 <div>
@@ -104,7 +104,7 @@
 
 </div>
 
-  <figure class="block xl:hidden">
+  <figure class="block xl:hidden globo">
 
                     <img src="/imagenes/r1.png"  class="block w-[85%] xl:w-[70%] mx-auto" alt="">
                 </figure>
@@ -112,22 +112,22 @@
 
                 </div>
 
-                <div class="mapa">
+                <div class="mapa my-[1.5rem]">
                     
                 <p class="text-lg  text-verde-militar px-4 xl:text-2xl" style="color: #a0522d;font-weight: 600;">Ubicación</p>
 
-                <a class="iriel" href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">
+ 
+                    <p class=" font-bold  text-verde-militar font-titulo font-base xl:text-xl xl:w-[40%] xl:mx-auto">Avenida Principal AA.HH. 6 de Noviembre Mz H1 Lt1, Los Olivos</p>
+                    <!-- <a href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">Ver mapa</a> -->
+                    <!-- From Uiverse.io by adamgiebl -->
+
+               <a class="iriel" href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">
   <span class="text">Ver mapa</span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
 </a>
-                    <p class=" font-bold  text-verde-militar font-titulo font-base xl:text-xl xl:w-[40%] xl:mx-auto">Avenida Principal AA.HH. 6 de Noviembre Mz H1 Lt1, Los Olivos</p>
-                    <!-- <a href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">Ver mapa</a> -->
-                    <!-- From Uiverse.io by adamgiebl -->
-
-
 
 
 
@@ -184,7 +184,7 @@
 
          
 
-<div class="falta flex flex-col gap-[1rem]  pt-4">
+<div class="falta flex flex-col gap-[1rem]  pt-0">
                 <p class="text-lg  text-verde-militar px-4 xl:text-2xl" style="color: #a0522d;font-weight: 600;">¿Cuánto falta?</p>
                 <div id="countdown-container" class="">
                     <div id="countdown" class="flex justify-center space-x-4">
@@ -199,7 +199,7 @@
 </div>
 
                 <!-- SECCIÓN DE REGALOS -->
-<div class="text-center bg-white/70 backdrop-blur-sm p-4 rounded-md flex flex-col gap-[.8rem] mb-[2rem] xl:w-[40%] xl:mx-auto xl:mb-[4rem]" style="backdrop-filter: hue-rotate(45deg);">
+<div class="text-center bg-white/70 backdrop-blur-sm p-4 rounded-md flex flex-col gap-[.8rem] mb-[3rem] xl:w-[40%] xl:mx-auto xl:mb-[4rem]" style="backdrop-filter: hue-rotate(45deg);">
    
                     <p class="text-verde-militar text-base xl:text-xl">El mejor regalo es tu presencia, por favor confirma tu asistencia por WhatsApp</p>
                     <div class="flex justify-center items-center space-x-4 mt-2">
@@ -236,7 +236,38 @@
     </audio>
 </div>
 
-    <script>
+    <script> 
+    import confetti from "canvas-confetti"
+
+    function lanzarConfeti() {
+  const colores = [
+    "#ff69b4",
+    "#ffd700",
+    "#00c2ff",
+    "#7cfc00",
+    "#a855f7",
+  ];
+
+  confetti({
+    particleCount: 150,
+    spread: 360,
+    startVelocity: 45,
+    gravity: 0.8,
+    ticks: 200,
+    origin: { x: 0.5, y: 0.5 },
+    colors: colores,
+  });
+
+  confetti({
+    particleCount: 100,
+    spread: 180,
+    startVelocity: 55,
+    origin: { x: 0.5, y: 0.5 },
+    colors: colores,
+  });
+}
+
+
         const entryButton = document.getElementById('entry-button') as HTMLElement;
         const entryScreen = document.getElementById('entry-screen') as HTMLElement;
         const invitationWrapper = document.getElementById('invitation-card-wrapper') as HTMLElement;
@@ -255,7 +286,16 @@
         entryButton.addEventListener('click', () => {
             entryScreen.style.display = 'none';
             invitationWrapper.style.display = 'block';
- backgroundMusic.volume=.3
+ backgroundMusic.volume=.6
+confetti({
+  particleCount: 300,
+  spread: 360,
+  startVelocity: 45,
+  origin: {
+    x: 0.5,
+    y: 0.5,
+  },
+});
              backgroundMusic.currentTime = 5;
              backgroundMusic.play()
         });
@@ -475,6 +515,104 @@
 .final{
     padding-bottom: 4rem;
 }
+
+
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.decoracion2 {
+  /* animation: flotar 3s ease-in-out infinite; */
+      animation: aparecer .8s ease-out both;
+      
+}
+
+
+
+
+
+
+
+
+.decoracion {
+   animation: latir 1.5s ease-in-out infinite;
+}
+
+@keyframes destellar {
+  0%, 100% { opacity: .35; scale: .8; }
+  50% { opacity: 1; scale: 1.15; }
+}
+
+.estrella {
+  animation: destellar 2s ease-in-out infinite;
+}
+
+
+
+@keyframes balancear {
+  0%, 100% { rotate: -6deg; }
+  50% { rotate: 6deg; }
+}
+
+.globo{
+  transform-origin: bottom center;
+  animation: balancear 1.8s ease-in-out infinite; 
+   
+
+}
+
+
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.regalo {
+  animation: aparecer .8s ease-out both;
+}
+
+
+
+
+
+
+@keyframes latir {
+  0%, 100% { scale: .9; }
+  50% { scale: 1.05; }
+}
+
+.corazon {
+  animation: latir 1.5s ease-in-out infinite;
+}
+
+
+
+
+
+@keyframes flotarDiagonal {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(8px, -12px); }
+}
+
+.nube {
+  animation: flotarDiagonal 4s ease-in-out infinite;
+}
+
+
+
     </style>
 
 
