@@ -23,10 +23,10 @@
             <!-- Contenedor para las imágenes decorativas -->
             <div class="absolute inset-0 z-0">
                 <!-- <img src="https://i.pinimg.com/originals/54/af/5b/54af5b2883c4085392a6b5e373c93004.webp" alt="Decoración" class="absolute top-1 left-1/2 -translate-x-1/2 w-[20%] h-auto transform rotate-180"> -->
-                <img src="/imagenes/perro.webp" alt="Decoración" class="absolute top-1/4 -translate-y-1/2 left-1 w-[25%] h-auto transform  xl:w-[15%] xl:left-[157px] xl:top-[20%] xl:top-[30%]">
+                <img src="/imagenes/perro.png" alt=" Decoración" class="xl:block hidden absolute top-1/4 -translate-y-1/2 left-1 w-[25%] h-auto transform  xl:w-[15%] xl:left-[157px] xl:top-[20%] xl:top-[30%]">
                 <!-- <img src="/imagenes/tt.webp" alt="Decoración" class="absolute bottom-1/4 translate-y-1/2 left-1 w-[25%] h-auto transform xl:w-[15%] xl:left-[157px] xl:top-[50%]"> -->
                 <!-- <img src="https://i.pinimg.com/originals/1a/26/6e/1a266e0d939f7bb55cc9c600a10009fc.webp" alt="Decoración" class="absolute top-1/4 -translate-y-1/2 right-1 w-[18%] h-auto transform -rotate-90"> -->
-                       <img src="/imagenes/r1.webp" alt="Decoración" class="absolute top-[30%] -translate-y-1/2 right-1 w-[25%] h-auto transform xl:w-[15%] xl:right-[157px] xl:top-[75rem] ">
+                     <img src="/imagenes/r1.webp" alt="Decoración" class="hidden xl:block absolute top-[30%] -translate-y-1/2 right-1 w-[25%] h-auto transform xl:w-[15%] xl:right-[157px] xl:top-[75rem] "> 
                 <!-- <img src="https://i.pinimg.com/originals/7e/7e/5c/7e7e5c71dc2d8a2733f696a67ef6c0a2.webp" alt="Decoración" class="absolute bottom-1/4 translate-y-1/2 right-1 w-[18%] h-auto transform -rotate-90"> -->
                  <!-- <img src="/imagenes/tt.webp" alt="Decoración" class="absolute bottom-1/4 translate-y-1/2 right-1 w-[18%] h-auto transform -rotate-90"> -->
 
@@ -35,7 +35,7 @@
             </div>
 
             <!-- Bloque de contenido central -->
-            <div class="relative z-10 m-10 p-2 text-center xl:max-w flex flex-col  xl:gap-3.5rem]">
+            <div class="relative z-10 m-0 p-0 text-center xl:max-w flex flex-col  xl:gap-3.5rem]">
                 <!-- <h1 class="font-great-vibes text-verde-militar text-6xl md:text-7xl">
                     León Alejandro
                 </h1> -->
@@ -57,7 +57,16 @@
                                       <figure >
                     <img src="/imagenes/irielportada.webp" class="block w-[80%] xl:w-[25%] mx-auto" alt="">
                 </figure>
-                    <p class=" text-verde-militar  font-ff font-medium text-base xl:text-xl xl:w-[40%] xl:mx-auto" style="color: #a0522d; ">Nuestra pequeña Iriel cumplirá 5 años y nos gustaria que nos acompañes a celebrarlo </p>
+<div class="flex items-center">
+    <figure class="block xl:hidden">
+         <img src="/imagenes/perro.png" alt="Decoración" class="w-[100%] xl:w-[15%] block">
+    </figure>
+      
+
+          <p class=" text-verde-militar  font-ff font-medium text-base xl:text-xl xl:w-[40%] xl:mx-auto" style="color: #a0522d; ">Nuestra pequeña Iriel cumplirá 5 años y nos gustaria que nos acompañes a celebrarlo </p>
+</div>
+
+                 
 
                 </div>
 
@@ -65,25 +74,36 @@
 <div class="dia flex flex-col gap-[1.5rem] my-[2rem] xl:my-[4rem]">
 
 
-
-       <p class="text-lg  mt-2 text-verde-militar px-4 xl:text-2xl " style="color: #a0522d;font-weight: 600;">Día y hora</p>
-
+<div>
+ <p class="text-lg  mt-2 text-verde-militar px-4 xl:text-2xl " style="color: #a0522d;font-weight: 600;">Día y hora</p>
+<div class="flex items-center">
                 <div class="flex justify-center items-start space-x-6  xl:text-xl xl:w-[40%] mx-auto">
                     <div class="text-left w-1/2  flex flex-col xl:items-end xl:mr-[2.5rem]">
                         <p class="font-bold text-verde-militar">Sábado</p>
-                        <p class="text-cafe-claro font-bold text-6xl leading-none">14</p>
+                        <p class="text-cafe-claro font-bold text-3xl leading-none">14</p>
                         <p class="-mt-1 text-verde-militar">Noviembre</p>
                         <!-- <div class="mt-4">
                             <p class="font-bold text-verde-militar">Con amor, sus papás:</p>
                             <p class="text-cafe-claro text-lg">Sebastian & Yuselmi</p>
                         </div> -->
                     </div>
-                    <div class="w-px bg-gray-400 bg-opacity-30 h-20 mr-[35px] xl:text-xl"></div>
+                    <div class="w-px bg-gray-400 bg-opacity-30 h-20 mr-[25px] xl:text-xl"></div>
                     <div class="text-left w-1/2">
                         <p class="font-bold text-verde-militar">Hora</p>
-                        <p class="text-cafe-claro font-bold text-4xl leading-none">05:30 <span class="text-2xl">PM</span> </p>
+                        <p class="text-cafe-claro font-bold text-3xl leading-none">05:30 <span class="text-2xl">PM</span> </p>
 
                     </div>
+
+
+
+
+</div>
+
+  <figure class="block xl:hidden">
+
+                    <img src="/imagenes/r1.png"  class="block w-full xl:w-[70%] mx-auto" alt="">
+                </figure>
+      </div>
 
                 </div>
 
@@ -225,8 +245,8 @@
         entryButton.addEventListener('click', () => {
             entryScreen.style.display = 'none';
             invitationWrapper.style.display = 'block';
- backgroundMusic.volume=.6
-             backgroundMusic.currentTime = 8;
+ backgroundMusic.volume=.4
+             backgroundMusic.currentTime = 5;
              backgroundMusic.play()
         });
 
