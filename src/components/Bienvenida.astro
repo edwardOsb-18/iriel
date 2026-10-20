@@ -71,14 +71,17 @@
                 </div>
 
 
-<div class="dia flex flex-col gap-[1.5rem] my-[2rem] xl:my-[4rem]">
+<div class="dia flex flex-col gap-[1.8rem] my-[2rem] xl:my-[4rem]">
 
 
 <div>
- <p class="text-lg  mt-2 text-verde-militar px-4 xl:text-2xl " style="color: #a0522d;font-weight: 600;">Día y hora</p>
-<div class="flex items-center">
-                <div class="flex justify-center items-start space-x-6  xl:text-xl xl:w-[40%] mx-auto">
-                    <div class="text-left w-1/2  flex flex-col xl:items-end xl:mr-[2.5rem]">
+ <!-- <p class="text-lg  mt-2 text-verde-militar px-4 xl:text-2xl " style="color: #a0522d;font-weight: 600;">Día y hora</p> -->
+<div class="flex items-center ">
+                <div class="flex justify-center items-center flex-col space-x-6  xl:text-xl xl:w-[40%] mx-auto">
+ <p class="text-lg   text-verde-militar text-center xl:text-2xl mb-[1rem] " style="color: #a0522d;font-weight: 600;">Día y hora</p>
+
+ <div class="flex ">
+<div class="text-left w-1/2  flex flex-col xl:items-end xl:mr-[2.5rem]">
                         <p class="font-bold text-verde-militar">Sábado</p>
                         <p class="text-cafe-claro font-bold text-3xl leading-none">14</p>
                         <p class="-mt-1 text-verde-militar">Noviembre</p>
@@ -87,12 +90,14 @@
                             <p class="text-cafe-claro text-lg">Sebastian & Yuselmi</p>
                         </div> -->
                     </div>
-                    <div class="w-px bg-gray-400 bg-opacity-30 h-20 mr-[25px] xl:text-xl"></div>
-                    <div class="text-left w-1/2">
+                    <div class="w-px bg-gray-400 bg-opacity-30 h-20  xl:text-xl mx-[1rem]"></div>
+                    <div class="text-left w-1/2 xl:ml-[30px]">
                         <p class="font-bold text-verde-militar">Hora</p>
-                        <p class="text-cafe-claro font-bold text-3xl leading-none">05:30 <span class="text-2xl">PM</span> </p>
+                        <p class="text-cafe-claro font-bold text-3xl leading-none">05:30 <span class="text-base">PM</span> </p>
 
                     </div>
+ </div>
+                    
 
 
 
@@ -101,13 +106,16 @@
 
   <figure class="block xl:hidden">
 
-                    <img src="/imagenes/r1.png"  class="block w-full xl:w-[70%] mx-auto" alt="">
+                    <img src="/imagenes/r1.png"  class="block w-[85%] xl:w-[70%] mx-auto" alt="">
                 </figure>
       </div>
 
                 </div>
 
-                <div class="mapa"><p class=" font-bold  text-verde-militar font-titulo font-base xl:text-xl xl:w-[40%] xl:mx-auto">Avenida Principal AA.HH. 6 de Noviembre Mz H1 Lt1, Los Olivos</p>
+                <div class="mapa">
+                    
+                <p class="text-lg  text-verde-militar px-4 xl:text-2xl" style="color: #a0522d;font-weight: 600;">Ubicación</p>
+                    <p class=" font-bold  text-verde-militar font-titulo font-base xl:text-xl xl:w-[40%] xl:mx-auto">Avenida Principal AA.HH. 6 de Noviembre Mz H1 Lt1, Los Olivos</p>
                     <!-- <a href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">Ver mapa</a> -->
                     <!-- From Uiverse.io by adamgiebl -->
 <a class="iriel" href="https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7" target="_blank">
@@ -174,7 +182,7 @@
 
          
 
-<div class="falta flex flex-col gap-[1.5rem]  pt-4">
+<div class="falta flex flex-col gap-[1rem]  pt-4">
                 <p class="text-lg  text-verde-militar px-4 xl:text-2xl" style="color: #a0522d;font-weight: 600;">¿Cuánto falta?</p>
                 <div id="countdown-container" class="">
                     <div id="countdown" class="flex justify-center space-x-4">
@@ -245,7 +253,7 @@
         entryButton.addEventListener('click', () => {
             entryScreen.style.display = 'none';
             invitationWrapper.style.display = 'block';
- backgroundMusic.volume=.4
+ backgroundMusic.volume=.3
              backgroundMusic.currentTime = 5;
              backgroundMusic.play()
         });
