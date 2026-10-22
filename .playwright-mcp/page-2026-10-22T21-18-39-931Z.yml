@@ -1,0 +1,62 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e6]:
+    - figure [ref=f2e8]
+    - generic [ref=f2e9]:
+      - figure [ref=f2e10]
+      - generic [ref=f2e11]:
+        - figure [ref=f2e12]:
+          - img "Decoración" [ref=f2e13]
+        - paragraph [ref=f2e14]: Nuestra pequeña Iriel cumplirá 5 años y nos gustaria que nos acompañes a celebrarlo
+    - generic [ref=f2e15]:
+      - generic [ref=f2e17]:
+        - generic [ref=f2e18]:
+          - paragraph [ref=f2e19]: Día y hora
+          - generic [ref=f2e20]:
+            - generic [ref=f2e21]:
+              - paragraph [ref=f2e22]: Sábado
+              - paragraph [ref=f2e23]: "14"
+              - paragraph [ref=f2e24]: Noviembre
+            - generic [ref=f2e26]:
+              - paragraph [ref=f2e27]: Hora
+              - paragraph [ref=f2e28]: 05:30 PM
+        - figure [ref=f2e29]
+      - generic [ref=f2e30]:
+        - paragraph [ref=f2e31]: Ubicación
+        - paragraph [ref=f2e32]: Avenida Principal AA.HH. 6 de Noviembre Mz H1 Lt1, Los Olivos
+        - link "Ver mapa" [ref=f2e33] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/vB7kGK1X7GQEYiDJ7
+        - link "Añadir a Google Calendar" [ref=f2e40] [cursor=pointer]:
+          - /url: https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumpleaños+de+Iriel+🌸&dates=20261114T173000/20261114T203000&details=🌸+¡Celebremos+el+cumpleaños+de+Iriel!+🎂💖%0A%0AAcompáñanos+a+compartir+un+día+lleno+de+alegría,+amor,+sorpresas+y+momentos+inolvidables.+Tu+presencia+hará+que+este+día+sea+aún+más+especial.+🎉✨%0A%0A%0A%0A¡Te+esperamos+para+celebrar+juntos+este+día+tan+especial!+🥳💕&location=Avenida+Principal+AA+HH.+6+de+Noviembre+Mz+H1+Lt1,+Los+Olivos&ctz=America%2FLima&remind=30
+    - generic [ref=f2e52]:
+      - paragraph [ref=f2e53]: ¿Cuánto falta?
+      - generic [ref=f2e55]:
+        - generic [ref=f2e56]:
+          - text: "23"
+          - paragraph [ref=f2e57]: DÍAS
+        - generic [ref=f2e58]:
+          - text: "01"
+          - paragraph [ref=f2e59]: HORAS
+        - generic [ref=f2e60]:
+          - text: "11"
+          - paragraph [ref=f2e61]: MINS
+        - generic [ref=f2e62]:
+          - text: "20"
+          - paragraph [ref=f2e63]: SEGS
+      - img "Decoración" [ref=f2e64]
+    - generic [ref=f2e65]:
+      - paragraph [ref=f2e66]: El mejor regalo es tu presencia, por favor confirma tu asistencia por WhatsApp
+      - link "Confirmar" [ref=f2e68] [cursor=pointer]:
+        - /url: https://api.whatsapp.com/send?phone=51920747991&text=Muchas%20gracias%20por%20la%20invitaci%C3%B3n%2C%20confirmo%20asistencia%20al%20cumplea%C3%B1os%20de%20Iriel%20%F0%9F%A5%B3
+    - generic [ref=f2e74]:
+      - paragraph [ref=f2e75]: Nuestra galería de recuerdos
+      - paragraph [ref=f2e76]: 💕 Los mejores momentos merecen quedarse para siempre.
+      - figure [ref=f2e77]:
+        - img "Decoración" [ref=f2e78]
+      - paragraph [ref=f2e79]: ¡Muy pronto!
+      - figure [ref=f2e80]:
+        - img "Decoración" [ref=f2e81]
+  - generic [ref=f2e84]:
+    - button [ref=f2e85]
+    - button [ref=f2e91]
+    - button [ref=f2e95]
+    - button [ref=f2e103]

@@ -1,0 +1,9 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - img "Bebé león" [ref=f8e4]
+    - button "Abrir Invitación" [ref=f8e5] [cursor=pointer]
+  - generic [ref=f8e8]:
+    - button [ref=f8e9]
+    - button [ref=f8e15]
+    - button [ref=f8e19]
+    - button [ref=f8e24]
