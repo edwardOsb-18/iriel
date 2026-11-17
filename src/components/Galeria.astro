@@ -7,13 +7,14 @@ import 'photoswipe/style.css';
 
 
 
-<video src="/imagenes/video/inicio.mp4 " class="video my-[4rem] mx-auto" loop muted autoplay controls></video>
+<video src="/imagenes/video/inicio.mp4" class="video mb-[4rem] mx-auto" loop muted autoplay controls playsinline></video>
 
 
 
-
+<h2 class="text-[#a0522d] my-[1rem] text-[1.2rem]">hagan click a cualquier imagen para agrandar las 📷</h2>
 <div class="pswp-gallery pswp-gallery--single-column gallery " id="my-gallery">
 
+<div class="as"><video src="/imagenes/video/vi3.mp4" class="video  h-full w-full" loop muted autoplay playsinline></video></div>
 
 {Array.from({length:25}).map((_,i)=>{
 let s=i+1
@@ -32,7 +33,7 @@ if(s===6||s===7||s===8||s===10||s===17||s===18||s===19||s===20||s===21||s===23||
 
 })} 
 
- 
+
 
 
 
@@ -43,7 +44,7 @@ if(s===6||s===7||s===8||s===10||s===17||s===18||s===19||s===20||s===21||s===23||
 
 
 
-<video src="/imagenes/video/vid.mp4 " class="video my-[3rEm]" loop muted autoplay></video>
+<video src="/imagenes/video/vid.mp4" class="video my-[3rem]" loop muted autoplay playsinline></video>
 
 </div>
 
@@ -63,9 +64,12 @@ const lightbox = new PhotoSwipeLightbox({
 lightbox.init();
 </script>
 
-<style>
-
+<style> 
+.as{
+  grid-row: 1/span 3;
+}
   .video {
+    margin-inline: auto;
     border-radius: 1.5rem;
   mask-image: linear-gradient(
     to bottom,
@@ -83,6 +87,17 @@ lightbox.init();
   grid-auto-rows: 80px;
   grid-auto-flow: dense;
   gap: 12px;
+}
+
+
+@media screen and (min-width:1200px){
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  grid-auto-flow: dense;
+  gap: 12px;
+}
 }
 
 .gallery  img {
